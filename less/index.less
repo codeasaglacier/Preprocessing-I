@@ -110,6 +110,7 @@ section {
 
 body {
 	line-height: 1;
+	color: grey;
 }
 
 ol,
@@ -151,6 +152,7 @@ body {
 @attention: red;
 @gap: 20px;
 @fit: 75%;
+
 // Mixins
 .center() {
 	display: flex;
@@ -253,3 +255,57 @@ header {
 		width: @fit;
 	}
 }
+
+// Mix-ins
+@onyx: black;
+.spread() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.rightside .container {
+	.center();
+	 color: @onyx;
+	 h3 {
+		flex-direction: column;
+		font-size: 1.6rem;
+	}
+	 @media(max-width: 500px){
+		flex-direction:column;
+	 }
+}
+
+.bottom-content {
+
+	justify-content: flex-start;
+	 color: @onyx;
+	@media(max-width:500px){
+		.spread();
+	}
+		
+}
+
+.foot {
+	display: flex;
+	justify-content: flex-start;
+	@media(max-width:500px){
+		.spread();
+		flex-direction: column;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
