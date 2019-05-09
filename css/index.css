@@ -134,3 +134,52 @@ html,
 body {
   height: 100%;
 }
+/* My CSS Code Starts Here */
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  max-width: 1000px;
+  padding: 0;
+  margin: auto;
+  background-color: white;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  background: white;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: red 3px solid;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-right: 40px;
+}
+.top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-content .container {
+  justify-content: space-between;
+  background: #ecebeb;
+}
+.top-content .container img {
+  margin-left: 90px;
+  margin-bottom: 200px;
+}
+.branding h1 {
+  font-size: 20px;
+}
