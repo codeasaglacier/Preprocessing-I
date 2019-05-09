@@ -1,1 +1,257 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  color: grey;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* My CSS Code Starts Here */
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  max-width: 1000px;
+  padding: 0;
+  margin: auto;
+  background-color: white;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  background: white;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: red 3px solid;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-right: 40px;
+}
+.top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-content .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ecebeb;
+}
+.top-content .container img {
+  margin-left: 90px;
+  margin-bottom: 200px;
+}
+.top-content .container .branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.top-content .container .branding p {
+  width: 75%;
+}
+.top-content .container .bttn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.branding h1 {
+  font-size: 20px;
+}
+.leftside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftside .container {
+  width: 75%;
+}
+.rightside .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.rightside .container h3 {
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .rightside .container {
+    flex-direction: column;
+  }
+}
+.bottom-content {
+  justify-content: flex-start;
+  color: black;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.foot {
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width: 500px) {
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
