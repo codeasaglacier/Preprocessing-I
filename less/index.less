@@ -150,7 +150,7 @@ body {
 @bold: bold;
 @attention: red;
 @gap: 20px;
-
+@fit: 75%;
 // Mixins
 .center() {
 	display: flex;
@@ -215,22 +215,18 @@ header {
 
 .top-content {
 	.center();
-
-
-
 	.container {
-		justify-content: space-between;
+		.center();
+		flex-direction: column;
 		background: rgb(236, 235, 235);
-
-
 		img {
 			margin-left: 90px;
 			margin-bottom: 200px;
 		}
-
-
+		.bttn{
+			.center();
+		}
 	}
-
 	//.container
 }
 
@@ -239,5 +235,11 @@ header {
 .branding {
 	h1 {
 		font-size: 20px;
+	}
+}
+.leftside{
+	.center();
+	.container{
+		width: @fit;
 	}
 }

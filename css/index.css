@@ -173,13 +173,29 @@ header nav a {
   align-items: center;
 }
 .top-content .container {
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: #ecebeb;
 }
 .top-content .container img {
   margin-left: 90px;
   margin-bottom: 200px;
 }
+.top-content .container .bttn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .branding h1 {
   font-size: 20px;
+}
+.leftside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftside .container {
+  width: 75%;
 }
