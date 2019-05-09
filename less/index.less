@@ -196,7 +196,10 @@ header {
 		max-width: 100%;
 		margin-top: 10px;
 		margin-bottom: 20px;
-
+		@media(max-width:500px) {
+			flex-direction: column;
+			.center();
+		}
 
 
 		a {
@@ -222,6 +225,13 @@ header {
 		img {
 			margin-left: 90px;
 			margin-bottom: 200px;
+		}
+		.branding{
+			.center();
+			flex-direction: column;
+			p{
+				width: @fit;
+			}
 		}
 		.bttn{
 			.center();
