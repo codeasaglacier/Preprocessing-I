@@ -149,15 +149,16 @@ body {
   overflow: hidden;
 }
 header {
+  margin: 0 auto;
   background: white;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: red 3px solid;
+  max-width: 800px;
+  border-bottom: blue 3px solid;
 }
 header nav {
   display: flex;
-  justify-content: flex-end;
-  max-width: 100%;
+  justify-content: flex-start;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -177,9 +178,7 @@ header nav a {
   margin-right: 40px;
 }
 .top-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 .top-content .container {
   display: flex;
@@ -189,17 +188,24 @@ header nav a {
   background: #ecebeb;
 }
 .top-content .container img {
-  margin-left: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 200px;
 }
 .top-content .container .branding {
+  color: blue;
+  margin-bottom: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.top-content .container .branding * {
+  margin: 1rem;
+}
 .top-content .container .branding p {
-  width: 75%;
+  width: 100%;
 }
 .top-content .container .bttn {
   display: flex;
@@ -209,26 +215,32 @@ header nav a {
 .branding h1 {
   font-size: 20px;
 }
-.leftside {
+.buildDream {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.leftside .container {
-  width: 75%;
+.buildDream h3 {
+  font-size: 1.6rem;
+  color: blue;
 }
-.rightside .container {
+.buildDream .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.helpYou .container {
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
 }
-.rightside .container h3 {
-  flex-direction: column;
+.helpYou .container h3 {
   font-size: 1.6rem;
 }
 @media (max-width: 500px) {
-  .rightside .container {
+  .helpYou .container {
     flex-direction: column;
   }
 }
